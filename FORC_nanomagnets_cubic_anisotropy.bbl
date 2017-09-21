@@ -1,0 +1,167 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{12}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Mayergoyz}(1986)}]{Mayergoyz1986}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Mayergoyz}},\ }\href {\doibase 10.1109/TMAG.1986.1064347} {\bibfield
+  {journal} {\bibinfo  {journal} {IEEE T. Magn.}\ }\textbf {\bibinfo {volume}
+  {22}},\ \bibinfo {pages} {603} (\bibinfo {year} {1986})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Roberts}\ \emph {et~al.}(2000)\citenamefont
+  {Roberts}, \citenamefont {Pike},\ and\ \citenamefont
+  {Verosub}}]{Roberts2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont
+  {Roberts}}, \bibinfo {author} {\bibfnamefont {C.~R.}\ \bibnamefont {Pike}}, \
+  and\ \bibinfo {author} {\bibfnamefont {K.~L.}\ \bibnamefont {Verosub}},\
+  }\href {\doibase 10.1029/2000JB900326} {\bibfield  {journal} {\bibinfo
+  {journal} {J. Geophys. Res.}\ }\textbf {\bibinfo {volume} {105}},\ \bibinfo
+  {pages} {28461} (\bibinfo {year} {2000})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pike}\ \emph {et~al.}(1999)\citenamefont {Pike},
+  \citenamefont {Roberts},\ and\ \citenamefont {Verosub}}]{Pike1999}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~R.}\ \bibnamefont
+  {Pike}}, \bibinfo {author} {\bibfnamefont {A.~P.}\ \bibnamefont {Roberts}}, \
+  and\ \bibinfo {author} {\bibfnamefont {K.~L.}\ \bibnamefont {Verosub}},\
+  }\href {\doibase 10.1063/1.370176} {\bibfield  {journal} {\bibinfo  {journal}
+  {J. Appl. Phys.}\ }\textbf {\bibinfo {volume} {85}},\ \bibinfo {pages} {6660}
+  (\bibinfo {year} {1999})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pike}\ \emph {et~al.}(2005)\citenamefont {Pike},
+  \citenamefont {Ross}, \citenamefont {Scalettar},\ and\ \citenamefont
+  {Zimanyi}}]{Pike2005}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~R.}\ \bibnamefont
+  {Pike}}, \bibinfo {author} {\bibfnamefont {C.~A.}\ \bibnamefont {Ross}},
+  \bibinfo {author} {\bibfnamefont {R.~T.}\ \bibnamefont {Scalettar}}, \ and\
+  \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Zimanyi}},\ }\href
+  {\doibase 10.1103/PhysRevB.71.134407} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {71}},\ \bibinfo
+  {pages} {134407} (\bibinfo {year} {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Katzgraber}\ \emph {et~al.}(2002)\citenamefont
+  {Katzgraber}, \citenamefont {Pazmandi}, \citenamefont {Pike}, \citenamefont
+  {Liu}, \citenamefont {Scalettar}, \citenamefont {Verosub},\ and\
+  \citenamefont {Zimanyi}}]{Katzgraber2002}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.~G.}\ \bibnamefont
+  {Katzgraber}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Pazmandi}}, \bibinfo {author} {\bibfnamefont {C.~R.}\ \bibnamefont {Pike}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Liu}}, \bibinfo {author}
+  {\bibfnamefont {R.~T.}\ \bibnamefont {Scalettar}}, \bibinfo {author}
+  {\bibfnamefont {K.~L.}\ \bibnamefont {Verosub}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {G.~T.}\ \bibnamefont {Zimanyi}},\ }\href {\doibase
+  10.1103/PhysRevLett.89.257202} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical review letters}\ }\textbf {\bibinfo {volume} {89}},\ \bibinfo
+  {pages} {257202} (\bibinfo {year} {2002})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stoner}\ and\ \citenamefont
+  {Wohlfarth}(1948)}]{Stoner1948}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~C.}\ \bibnamefont
+  {Stoner}}\ and\ \bibinfo {author} {\bibfnamefont {E.~P.}\ \bibnamefont
+  {Wohlfarth}},\ }\href {http://www.jstor.org/stable/91421} {\bibfield
+  {journal} {\bibinfo  {journal} {Philos. T. R. Soc. A.}\ }\textbf {\bibinfo
+  {volume} {240}},\ \bibinfo {pages} {599} (\bibinfo {year}
+  {1948})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Newell}(2005)}]{Newell2005}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~J.}\ \bibnamefont
+  {Newell}},\ }\href {\doibase 10.1029/2004GC000877} {\bibfield  {journal}
+  {\bibinfo  {journal} {Geochem. Geophys. Geosyst.}\ }\textbf {\bibinfo
+  {volume} {6}} (\bibinfo {year} {2005}),\ 10.1029/2004GC000877}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Usov}\ and\ \citenamefont
+  {Peschany}(1997)}]{Usov1997}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~A.}\ \bibnamefont
+  {Usov}}\ and\ \bibinfo {author} {\bibfnamefont {S.~E.}\ \bibnamefont
+  {Peschany}},\ }\href {\doibase 10.1016/S0304-8853(97)00180-7} {\bibfield
+  {journal} {\bibinfo  {journal} {J. Magn. Magn. Mat.}\ }\textbf {\bibinfo
+  {volume} {174}},\ \bibinfo {pages} {247} (\bibinfo {year}
+  {1997})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Walker}\ \emph {et~al.}(1993)\citenamefont {Walker},
+  \citenamefont {Mayo}, \citenamefont {O'Grady}, \citenamefont {Charles},\ and\
+  \citenamefont {Chantrell}}]{Walker1993}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Walker}}, \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Mayo}},
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {O'Grady}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Charles}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {R.}~\bibnamefont {Chantrell}},\ }\href {\doibase
+  10.1088/0953-8984/5/17/012} {\bibfield  {journal} {\bibinfo  {journal} {J.
+  Phys.: Condens. Matter}\ }\textbf {\bibinfo {volume} {5}},\ \bibinfo {pages}
+  {2779} (\bibinfo {year} {1993})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Muxworthy}\ \emph {et~al.}(2004)\citenamefont
+  {Muxworthy}, \citenamefont {Heslop},\ and\ \citenamefont
+  {Williams}}]{Muxworthy2004}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Muxworthy}}, \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont {Heslop}}, \
+  and\ \bibinfo {author} {\bibfnamefont {W.}~\bibnamefont {Williams}},\ }\href
+  {\doibase 10.1111/j.1365-246X.2004.02358.x} {\bibfield  {journal} {\bibinfo
+  {journal} {Geophys. J. Int.}\ }\textbf {\bibinfo {volume} {158}},\ \bibinfo
+  {pages} {888} (\bibinfo {year} {2004})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Harrison}\ and\ \citenamefont
+  {Lascu}(2014)}]{Harrison2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~J.}\ \bibnamefont
+  {Harrison}}\ and\ \bibinfo {author} {\bibfnamefont {I.}~\bibnamefont
+  {Lascu}},\ }\href {\doibase 10.1002/2014GC005582} {\bibfield  {journal}
+  {\bibinfo  {journal} {Geochem. Geophys. Geosyst.}\ }\textbf {\bibinfo
+  {volume} {15}},\ \bibinfo {pages} {4671} (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Armijo}(1966)}]{Armijo1966}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Armijo}},\ }\href {\doibase 10.2140/pjm.1966.16.1} {\bibfield  {journal}
+  {\bibinfo  {journal} {Pac. J. Math.}\ }\textbf {\bibinfo {volume} {16}},\
+  \bibinfo {pages} {1} (\bibinfo {year} {1966})}\BibitemShut {NoStop}%
+\end{thebibliography}%
