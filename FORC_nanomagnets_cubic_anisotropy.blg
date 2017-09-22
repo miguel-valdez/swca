@@ -1,67 +1,61 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: FORC_nanomagnets_cubic_anisotropy.aux
-The style file: apsrev4-1.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+The style file: IEEEtranN.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Database file #1: FORC_nanomagnets_cubic_anisotropyNotes.bib
-Database file #2: references.bib
-control{REVTEX41Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
-control{apsrev41Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
-Warning--jnrlst (dependency: not reversed) set 1
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
-Control: key (0) 
-Control: author (8) initials jnrlst
-Control: editor formatted (1) identically to author
-Control: production of article title (-1) disabled
-Control: page (0) single
-Control: year (1) truncated
-Control: production of eprint (0) enabled
-You've used 14 entries,
-            5847 wiz_defined-function locations,
-            1719 strings with 17636 characters,
-and the built_in function-call counts, 12431 in all, are:
-= -- 778
-> -- 304
-< -- 108
-+ -- 105
-- -- 87
-* -- 1884
-:= -- 1217
-add.period$ -- 12
-call.type$ -- 14
-change.case$ -- 48
-chr.to.int$ -- 22
-cite$ -- 14
-duplicate$ -- 1197
-empty$ -- 870
-format.name$ -- 172
-if$ -- 2413
+Database file #1: IEEEabrv.bib
+Database file #2: references.bib
+-- IEEEtranN.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+** Natbib version - not for normal IEEE work.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+
+Done.
+You've used 12 entries,
+            4855 wiz_defined-function locations,
+            1577 strings with 21189 characters,
+and the built_in function-call counts, 12678 in all, are:
+= -- 1223
+> -- 324
+< -- 109
++ -- 170
+- -- 74
+* -- 757
+:= -- 2034
+add.period$ -- 24
+call.type$ -- 12
+change.case$ -- 24
+chr.to.int$ -- 216
+cite$ -- 12
+duplicate$ -- 807
+empty$ -- 769
+format.name$ -- 95
+if$ -- 2823
 int.to.chr$ -- 1
-int.to.str$ -- 21
-missing$ -- 169
-newline$ -- 88
+int.to.str$ -- 13
+missing$ -- 117
+newline$ -- 84
 num.names$ -- 36
-pop$ -- 513
+pop$ -- 222
 preamble$ -- 1
-purify$ -- 60
-quote$ -- 0
-skip$ -- 454
+purify$ -- 12
+quote$ -- 2
+skip$ -- 967
 stack$ -- 0
-substring$ -- 309
-swap$ -- 1118
-text.length$ -- 34
+substring$ -- 560
+swap$ -- 684
+text.length$ -- 35
 text.prefix$ -- 0
-top$ -- 10
-type$ -- 178
-warning$ -- 1
-while$ -- 44
+top$ -- 6
+type$ -- 192
+warning$ -- 0
+while$ -- 59
 width$ -- 0
-write$ -- 149
-(There was 1 warning)
+write$ -- 214

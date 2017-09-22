@@ -1,110 +1,123 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  21 SEP 2017 12:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  22 SEP 2017 16:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **\input FORC_nanomagnets_cubic_anisotropy.tex
 (./FORC_nanomagnets_cubic_anisotropy.tex
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-1.cls
-Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
-ex4/ for documentation)
- Copyright (c) 2009 The American Physical Society.
- mailto:revtex@aps.org
- Licensed under the LPPL:
-http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
- Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
- Based on work by David Carlisle <david at dcarlisle.demon.co.uk>.
-ltxutil[2010/07/25/20:33:00 4.1r utilities package (portions licensed from W. E
-. Baxter web at superscript.com)]
-LaTeX Info: Redefining \@centercr on input line 308.
-Class revtex4-1 Info: Repairing broken LaTeX eqnarray on input line 358.
-\eqncolsep=\skip41
-Class revtex4-1 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
-note on input line 433.
-Class revtex4-1 Info: Repairing broken LateX \@sect on input line 755.
-\intertabularlinepenalty=\count79
-\@tbpen=\count80
-\@arstrutbox@hline=\box26
-Class revtex4-1 Info: Repairing broken LaTeX \@xbitor on input line 1786.
-Class revtex4-1 Info: Making \typeout \long on input line 2046.
-ltxfront[2010/07/25/20:33:00 4.1r frontmatter package (AO,DPC)]
-\c@affil=\count81
-\c@collab=\count82
-\absbox=\box27
-ltxgrid[2010/07/25/20:33:00 4.1r page grid package (portions licensed from W. E
-. Baxter web at superscript.com)]
-\c@linecount=\count83
-\output@latex=\toks14
-\box@size@1=\box28
-\box@size@2=\box29
-\@protection@box=\box30
-\@topmark@saved=\toks15
-\footins@saved=\box31
-\footins@recovered=\box32
-\column@recovered=\box33
-\pagesofar=\box34
-\footsofar=\box35
-\pagegrid@col=\count84
-Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
- \\  on input line 5578.
-\c@part=\count85
-\c@section=\count86
-\c@subsection=\count87
-\c@subsubsection=\count88
-\c@paragraph=\count89
-\c@subparagraph=\count90
+(/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen105
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
+\IEEEiedtopsep=\skip41
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
-\c@figure=\count91
-\fbox@1=\box36
-\c@table=\count92
-\fbox@2=\box37
-\c@video=\count93
-\fbox@4=\box38
-\@bibdataout=\write3
-\widetext@top=\box39
-\widetext@bot=\box40
-Class revtex4-1 Info: Selecting society aps on input line 7542.
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps4-1.rtx
-File: aps4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for docu
-mentation)
-Class revtex4-1 Info: RevTeX society APS selected on input line 31.
-)
-Class revtex4-1 Info: Selecting journal prb on input line 7544.
-Class revtex4-1 Info: APS journal PRB selected on input line 7545.
-
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
-File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
-documentation)
-Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
-Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip44
-\bibsep=\skip45
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count94
-)
-Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
-
-(/usr/share/texlive/texmf-dist/tex/latex/revtex/revsymb4-1.sty
-Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
-or documentation)
-LaTeX Info: Redefining \REV@mathfrak on input line 119.
-))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
@@ -126,14 +139,14 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count95
+\Gread@gobject=\count94
 ))
-\Gin@req@height=\dimen102
-\Gin@req@width=\dimen103
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/03 v2.15a AMS math features
-\@mathmargin=\skip46
+\@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -141,91 +154,89 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen104
-)
-LaTeX Info: Redefining \text on input line 28.
-)
+\@emptytoks=\toks16
+\ex@=\dimen128
+))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen105
+\pmbraise@=\dimen129
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count96
+\inf@bad=\count95
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count97
-\leftroot@=\count98
+\uproot@=\count96
+\leftroot@=\count97
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count99
-\DOTSCASE@=\count100
+\classnum@=\count98
+\DOTSCASE@=\count99
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box41
-\strutbox@=\box42
-\big@size=\dimen106
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen130
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count101
-\c@MaxMatrixCols=\count102
-\dotsspace@=\muskip11
-\c@parentequation=\count103
-\dspbrk@lvl=\count104
-\tag@help=\toks18
-\row@=\count105
-\column@=\count106
-\maxfields@=\count107
-\andhelp@=\toks19
-\eqnshift@=\dimen107
-\alignsep@=\dimen108
-\tagshift@=\dimen109
-\tagwidth@=\dimen110
-\totwidth@=\dimen111
-\lineht@=\dimen112
-\@envbody=\toks20
-\multlinegap=\skip47
-\multlinetaggap=\skip48
-\mathdisplay@stack=\toks21
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
+\dotsspace@=\muskip10
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks17
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks18
+\eqnshift@=\dimen131
+\alignsep@=\dimen132
+\tagshift@=\dimen133
+\tagwidth@=\dimen134
+\totwidth@=\dimen135
+\lineht@=\dimen136
+\@envbody=\toks19
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
-Class revtex4-1 Info: Patching LaTeX tabular. on input line 6.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 6.
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 6.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 6.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 6.
-
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
 (./FORC_nanomagnets_cubic_anisotropy.aux)
 \openout1 = `FORC_nanomagnets_cubic_anisotropy.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
 
+-- Lines per column: 58 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen113
-\scratchbox=\box43
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen114
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count107
+\scratchdimen=\dimen137
+\scratchbox=\box30
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen138
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
+\everyMPtoPDFconversion=\toks22
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -274,96 +285,109 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\openout3 = `FORC_nanomagnets_cubic_anisotropyNotes.bib'.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 25--26
-\OT1/cmr/m/n/10 (The main branch cor-re-sponds to the hy-potenuse
+]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 24.
+
+Underfull \hbox (badness 5637) in paragraph at lines 29--30
+\OT1/ptm/m/n/10 hys-tere-sis loops, each start-ing at (pos-i-tive) sat-u-ra-tio
+n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-[]$ \OT1/cmr/m/n/10 and the leg
+Underfull \hbox (badness 2245) in paragraph at lines 29--30
+\OT1/ptm/m/n/10 strength down to $\OML/cmm/m/it/10 B[]$\OT1/ptm/m/n/10 . From $
+\OML/cmm/m/it/10 B[]$\OT1/ptm/m/n/10 , the field strength is
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-[]$ \OT1/cmr/m/n/10 cor-re-sponds
+Underfull \hbox (badness 4024) in paragraph at lines 29--30
+\OT1/ptm/m/n/10 tri-an-gle $[] \OT1/cmr/m/n/10 = []$\OT1/ptm/m/n/10 .
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 31--31
-\OT1/cmr/m/n/10 Wohl-farth$[]$$[]$$[]$ sig-nif-i-cant progress has been made to
--
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\OT1/ptm/m/n/10 (The main branch cor-re-sponds to the hy-potenuse
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 1067) in paragraph at lines 108--108
-[]\OT1/cmr/m/n/10 The frac-tion of par-ti-cles that have an easy axis
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[]$ \OT1/ptm/m/n/10 and the leg
  []
 
-[3]
-Underfull \hbox (badness 1189) in paragraph at lines 125--126
-[]\OT1/cmr/m/n/10 This reasearch was sup-ported by In-sti-tuto Mex-i-
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+[]$ \OT1/ptm/m/n/10 cor-re-sponds to
  []
 
-(./FORC_nanomagnets_cubic_anisotropy.bbl)
-<./figs/FIG01.pdf, id=26, 578.16pt x 578.16pt>
+
+Underfull \hbox (badness 3735) in paragraph at lines 29--30
+\OT1/ptm/m/n/10 ana-log of the Preisach weight func-tion based on an
+ []
+
+[2
+
+] [3] [4] <./figs/FIG01.pdf, id=28, 578.16pt x 578.16pt>
 File: ./figs/FIG01.pdf Graphic file (type pdf)
- <use ./figs/FIG01.pdf>
-Package pdftex.def Info: ./figs/FIG01.pdf used on input line 133.
-(pdftex.def)             Requested size: 510.0pt x 509.9998pt.
 
-<./figs/FIG02.pdf, id=27, 578.16pt x 289.08pt>
+<use ./figs/FIG01.pdf>
+Package pdftex.def Info: ./figs/FIG01.pdf used on input line 257.
+(pdftex.def)             Requested size: 516.0pt x 516.02524pt.
+ <./figs/FIG02.pdf, id=29, 578.16pt x 289.08pt>
 File: ./figs/FIG02.pdf Graphic file (type pdf)
- <use ./figs/FIG02.pdf>
-Package pdftex.def Info: ./figs/FIG02.pdf used on input line 139.
-(pdftex.def)             Requested size: 510.0pt x 254.9999pt.
 
-<./figs/FIG03.pdf, id=28, 544.9158pt x 512.03294pt>
+<use ./figs/FIG02.pdf>
+Package pdftex.def Info: ./figs/FIG02.pdf used on input line 263.
+(pdftex.def)             Requested size: 516.0pt x 258.0126pt.
+ <./figs/FIG03.pdf, id=30, 544.9158pt x 512.03294pt>
 File: ./figs/FIG03.pdf Graphic file (type pdf)
- <use ./figs/FIG03.pdf>
-Package pdftex.def Info: ./figs/FIG03.pdf used on input line 145.
-(pdftex.def)             Requested size: 510.0pt x 479.22495pt.
 
-<./figs/FIG04.pdf, id=29, 1027.19759pt x 832.5504pt>
+<use ./figs/FIG03.pdf>
+Package pdftex.def Info: ./figs/FIG03.pdf used on input line 269.
+(pdftex.def)             Requested size: 516.0pt x 484.88936pt.
+ <./figs/FIG04.pdf, id=31, 1027.19759pt x 832.5504pt>
 File: ./figs/FIG04.pdf Graphic file (type pdf)
- <use ./figs/FIG04.pdf>
-Package pdftex.def Info: ./figs/FIG04.pdf used on input line 151.
-(pdftex.def)             Requested size: 510.0pt x 413.35233pt.
 
-[4] [5 <./figs/FIG01.pdf>] [6 <./figs/FIG02.pdf>] [7 <./figs/FIG03.pdf>]
-[8 <./figs/FIG04.pdf>] (./FORC_nanomagnets_cubic_anisotropy.aux) ) 
+<use ./figs/FIG04.pdf>
+Package pdftex.def Info: ./figs/FIG04.pdf used on input line 275.
+(pdftex.def)             Requested size: 516.0pt x 418.21783pt.
+ [5
+
+] [6 <./figs/FIG01.pdf>] [7 <./figs/FIG02.pdf>]
+[8 <./figs/FIG03.pdf>] [9 <./figs/FIG04.pdf>]
+(./FORC_nanomagnets_cubic_anisotropy.aux) ) 
 Here is how much of TeX's memory you used:
- 4181 strings out of 494953
- 55720 string characters out of 6180977
- 142384 words of memory out of 5000000
- 7424 multiletter control sequences out of 15000+600000
- 9165 words of font info for 33 fonts, out of 8000000 for 9000
+ 3094 strings out of 494953
+ 47433 string characters out of 6180977
+ 122206 words of memory out of 5000000
+ 6344 multiletter control sequences out of 15000+600000
+ 44908 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,11n,27p,1984b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti9.pfb>
-Output written on FORC_nanomagnets_cubic_anisotropy.pdf (8 pages, 13031359 byte
+ 38i,11n,25p,1981b,296s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts
+/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/times/utmri8a.pfb>
+Output written on FORC_nanomagnets_cubic_anisotropy.pdf (9 pages, 13003852 byte
 s).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
+ 135 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

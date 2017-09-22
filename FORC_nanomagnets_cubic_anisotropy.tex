@@ -1,36 +1,40 @@
-\documentclass[aps,prb,showkeys,showpacs,reprint]{revtex4-1}
+\documentclass[journal,transmag]{IEEEtran}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{cite}
 \graphicspath{{./figs/}}
 
 \begin{document}
-\title{First order reversal curve diagrams of nanomagnets with cubic magnetocrystalline anisotropy}
+\title{First Order Reversal Curve Diagrams of Nanomagnets with Cubic Magnetocrystalline Anisotropy}
 
-\author{Miguel~A.~Valdez-Grijalva}
-\author{Adrian~R.~Muxworthy}
-\affiliation{Department of Earth Science and Engineering, Imperial College London, SW7 2BJ, London, UK}
-\date{September 19, 2017}
+\author{\IEEEauthorblockN{Miguel~A.~Valdez-Grijalva\IEEEauthorrefmark{1} and
+Adrian~R.~Muxworthy\IEEEauthorrefmark{1}}
+\IEEEauthorblockA{\IEEEauthorrefmark{1}Department of Earth Science and Engineering, Imperial College London, SW7 2BJ, London, UK}
+Corresponding author: M.~A.~Valdez-Grijalva (email: m.valdez-grijalva13@imperial.ac.uk).}%
+\date{September 22, 2017}
 
 \begin{abstract}
 First order reversal curve (FORC) diagrams are routinely used as a material's magnetic fingerprint. FORC diagrams of noninteracting dispersions of single-domain (SD) particles with uniaxial magnetocrystalline anisotropy (MCA) are well known. However, a large class of materials possess a cubic MCA for which the FORC diagram properties of noninteracting SD dispersions remain unknown. A coherent rotation SD model that incorporates cubic MCA was implemented to study the FORC diagram properties of noninteracting ensembles of SD magnetite (Fe$_3$O$_4$), iron (Fe) and greigite (Fe$_3$S$_4$). The pattern formation mechanism is identified and related to irreversible events the magnetization undergoes. The purely reversible signal is determined by a novel approach based on the FORC diagram properties of individual particles. The method was found to be in excellent agreement with previous calculations of the basic hysteretic properties of cubic MCA materials. These results support the utility of FORC diagrams for mineralogical assessment of samples containing SD particles with cubic MCA.
 \end{abstract}
 
-\pacs{91.60.Pn,91.25.F-}
-\keywords{First order reversal curves, Cubic magnetocrystalline anisotropy, FORC diagrams}
+\IEEEtitleabstractindextext{%
+\begin{IEEEkeywords}
+Computational magnetics, Hysteresis modeling, Numerical methods, Nanomagnetics
+\end{IEEEkeywords}}
 \maketitle
 
 \section{Introduction}
-Ferromagnetic materials exhibit magnetic hysteresis: the dependence of the material's magnetization $\mathbf{M}$ on its history \citep{Mayergoyz1986}. The hysteretic response of a magnetic material is obtained by a series of measurements of a material's scalar magnetization $M$ as a function of an applied magnetic induction $\mathbf{B}$ (synonymous with magnetic field in this paper). These proceed by a) the application of a saturating magnetic field in a given direction (up to a field strength $|\mathbf{B}| = B = B_{\text{sat.}}$), followed by b) the quasi-static decrease of the applied field strength until $B = 0$. c) The field strength is increased in the direction opposite the initial up to $B_\text{sat}$; this traces a magnetization curve, the main branch of the hysteresis loop. Finally, d) the same process is carried out in reverse to obtain the reversal branch and complete the hysteresis loop.\par
+\IEEEPARstart{F}{erromagnetic} materials exhibit magnetic hysteresis: the dependence of the material's magnetization $\mathbf{M}$ on its history \cite{Mayergoyz1986}. The hysteretic response of a magnetic material is obtained by a series of measurements of a material's scalar magnetization $M$ as a function of an applied magnetic induction $\mathbf{B}$ (synonymous with magnetic field in this paper). These proceed by a) the application of a saturating magnetic field in a given direction (up to a field strength $|\mathbf{B}| = B = B_{\text{sat.}}$), followed by b) the quasi-static decrease of the applied field strength until $B = 0$. c) The field strength is increased in the direction opposite the initial up to $B_\text{sat}$; this traces a magnetization curve, the main branch of the hysteresis loop. Finally, d) the same process is carried out in reverse to obtain the reversal branch and complete the hysteresis loop.\par
 
-First order reversal curves (FORCs) are a set of partial hysteresis loops, each starting at (positive) saturation followed by the quasi-static decrease of the applied field strength down to $B_a$. From $B_a$, the field strength is increased back to $B_{\text{sat}}$ to trace a given curve labeled by its $B_a$ value. On each FORC, the scalar magnetization is then a function $M=M(B_b, B_a)$ of the applied field $Bb$ and the $B_a$ value of the given curve ($B_a \leq B_b$). This function $M=M(B_b, B_a)$ is then defined on the right triangle $\text{T}=\left\{ (B_b,\, B_a):\, | B_b | ,\, | B_a | \leq B_{\text{sat}};\, B_a \leq B_b \right\}$. (The main branch corresponds to the hypotenuse $\left\{ M(B_b=B, B_a=B):\, |B| \leq B_{\text{sat.}} \right\}$ and the leg $\left\{ M(B_b=B, B_a=-B_{\text{sat.}}):\, |B| \leq B_{\text{sat.}}\right\}$ corresponds to the reversal branch.) The FORC distribution, an empirical analog of the Preisach weight function based on an experimental protocol, is defined as the second order mixed partial derivative \citep{Mayergoyz1986}
+First order reversal curves (FORCs) are a set of partial hysteresis loops, each starting at (positive) saturation followed by the quasi-static decrease of the applied field strength down to $B_a$. From $B_a$, the field strength is increased back to $B_{\text{sat}}$ to trace a given curve labeled by its $B_a$ value. On each FORC, the scalar magnetization is then a function $M=M(B_b, B_a)$ of the applied field $Bb$ and the $B_a$ value of the given curve ($B_a \leq B_b$). This function $M=M(B_b, B_a)$ is then defined on the right triangle $\text{T}=\left\{ (B_b,\, B_a):\, | B_b | ,\, | B_a | \leq B_{\text{sat}};\, B_a \leq B_b \right\}$. (The main branch corresponds to the hypotenuse $\left\{ M(B_b=B, B_a=B):\, |B| \leq B_{\text{sat.}} \right\}$ and the leg $\left\{ M(B_b=B, B_a=-B_{\text{sat.}}):\, |B| \leq B_{\text{sat.}}\right\}$ corresponds to the reversal branch.) The FORC distribution, an empirical analog of the Preisach weight function based on an experimental protocol, is defined as the second order mixed partial derivative \cite{Mayergoyz1986}
 \begin{equation}\label{forc}
 \rho = \rho(B_b, B_a) = -\frac{1}{2}\frac{\partial^2 M}{\partial B_a \partial B_b},
 \end{equation}
-which must be understood in some weak sense to allow the discontinuous $M(B_b, B_a)$. Contour plots of the FORC distribution are known as FORC diagrams and have been used by the wide magnetics community as a magnetic fingerprint \citep{Roberts2000,Pike1999,Pike2005,Katzgraber2002}.\par
+which must be understood in some weak sense to allow the discontinuous $M(B_b, B_a)$. Contour plots of the FORC distribution are known as FORC diagrams and have been used by the wide magnetics community as a magnetic fingerprint \cite{Roberts2000,Pike1999,Pike2005,Katzgraber2002}.\par
 
-Based on the groundbreaking work of \citet{Stoner1948} significant progress has been made towards understanding the contribution of magnetic single-domain (SD) particles with uniaxial magnetocrystalline anisotropy (MCA) to the FORC diagram properties of interacting and noninteracting dispersions\citep{Newell2005}. However, many materials including the most abundant ferromagnetic minerals on Earth possess a cubic MCA. The cubic MCA system is more complicated than the uniaxial and the mechanism behind the FORC diagram pattern formation is not yet as well understood as the general hysteretic properties \citep{Usov1997,Walker1993}.\par
+Based on Stoner-Wohlfarth theory \cite{Stoner1948} significant progress has been made towards understanding the contribution of magnetic single-domain (SD) particles with uniaxial magnetocrystalline anisotropy (MCA) to the FORC diagram properties of interacting and noninteracting dispersions\cite{Newell2005}. However, many materials including the most abundant ferromagnetic minerals on Earth possess a cubic MCA. The cubic MCA system is more complicated than the uniaxial and the mechanism behind the FORC diagram pattern formation is not yet as well understood as the general hysteretic properties \cite{Usov1997,Walker1993}.\par
 
-Previous studies of FORC diagram pattern formation by minerals with cubic MCA used micromagnetics\citep{Muxworthy2004} and dipole-dipole modelling\citep{Harrison2014} to study the influence of magnetostatic interactions on the FORC diagram; however, the fully noninteracting case remains unknown as these studies rely on specific geometries (number of particles, positions, orientations, etc.) In this study we present a novel approach for numerically calculating the FORC diagram of a uniform noninteracting dispersion of SD particles with cubic MCA. The magnetic parameters of magnetite (Fe$_3$O$_4$), iron (Fe) and greigite (Fe$_3$S$_4$) have been used due to the natural abundance and importance for the Earth sciences of these iron minerals.\par
+Previous studies of FORC diagram pattern formation by minerals with cubic MCA used micromagnetics\cite{Muxworthy2004} and dipole-dipole modelling\cite{Harrison2014} to study the influence of magnetostatic interactions on the FORC diagram; however, the fully noninteracting case remains unknown as these studies rely on specific geometries (number of particles, positions, orientations, etc.) In this study we present a novel approach for numerically calculating the FORC diagram of a uniform noninteracting dispersion of SD particles with cubic MCA. The magnetic parameters of magnetite (Fe$_3$O$_4$), iron (Fe) and greigite (Fe$_3$S$_4$) have been used due to the natural abundance and importance for the Earth sciences of these iron minerals.\par
 
 \section{Method}
 
@@ -63,7 +67,7 @@ where $\left[ m \right]$ is, up to its sign, the size of the magnetization disco
 For a single particle, the computation of the complete set of FORCs (for a given field orientation) can be simplified if we note that each curve consists mostly of reversible motion with only a few irreversible jumps at specific switching fields. This means that all the FORCs with $B_a$ larger than the first switching field are implicitly calculated in the main branch of the hysteresis loop. Similarly for all the $m(B_b, B_a)$ between the first (second) and second (third) switching field (if there are more than two irreversible jumps) and the $m(B_b, B_a)$ between the last switching field and $-B_{\text{sat.}}$ . All that is left then, after calculating the hysteresis main branch, is to calculate the FORCs starting at $B_a$ values corresponding to the switching fields (Fig. \ref{FIG01}(b)). Once obtained, all $m(B_b, B_a)$ form a grid $m_i^j$ in the domain $\text{T}$ where the FORC distribution can now be calculated (Fig. \ref{FIG01}(c)). The calculation is done at each grid point by least-square fitting a second degree polynomial surface on a subgrid $\left\{ m_{i+k}^{j+l}:\, k, l=-\text{SF},\cdots,\text{SF} \right\}$, where SF is the so-called smoothing factor, taking care to exclude points outside the domain $\text{T}$; from the general equation of the fitted polynomial surface $a_0 + a_1x + a_2 y + a_3 xy + a_4x^2 + a_5 y^2 = 0$  the FORC is distribution is simply $-a_3/2$. Throughout this study SF=1 was used as to limit the smoothing and retain the delta-like profile of the FORC distribution as much as possible (Figure \ref{FIG01}(d).) The final FORC diagrams are obtained by adding the FORC distributions for each individual field orientation instead of calculating on the total magnetic response; essentially, this is what allows to remove the irreversible transitions contributions from the FORC diagram for each field orientation and construct the purely reversible FORC diagrams.\par
 
 \subsection{Backtracking line search gradient descent method}\label{grad method}
-A small spherical ferromagnetic particle in the single-domain (SD) state is modelled as a magnetic dipole with constant magnitude $M_s$, the saturation magnetization for the material. The magnetic Gibbs free-energy of the particle is then the sum of the magnetocrystalline anisotropy (MCA) and the external field energies:
+A small spherical ferromagnetic particle in the single-domain (SD) state is modeled as a magnetic dipole with constant magnitude $M_s$, the saturation magnetization for the material. The magnetic Gibbs free-energy of the particle is then the sum of the magnetocrystalline anisotropy (MCA) and the external field energies:
 \begin{equation}\label{EQ:ENERGY}
 E = E_a +E_z
 \end{equation}
@@ -100,10 +104,10 @@ where
 ( E_z )_\phi &= -M_s B\sin\theta \left( - \chi\sin\phi + \psi\cos\phi \right).
 \end{align}
 \par
-A backtracking line search gradient descent method was implemented \citep{Armijo1966} to simulate hysteresis loops and first order reversal curves of nanomagnets with cubic MCA. The Armijo-Goldstein control parameters \citep{Armijo1966} $c=1\times10^-4$, $\tau=1/2$ were used in this study. These ensure that the minimizer follows the gradient descent direction very closely as shown in Fig. \ref{FIG02}.\par
+A backtracking line search gradient descent method was implemented \cite{Armijo1966} to simulate hysteresis loops and first order reversal curves of nanomagnets with cubic MCA. The Armijo-Goldstein control parameters \cite{Armijo1966} $c=1\times10^-4$, $\tau=1/2$ were used in this study. These ensure that the minimizer follows the gradient descent direction very closely as shown in Fig. \ref{FIG02}.\par
 
 \section{Results and Discussion}
-Fig. \ref{FIG01}(b) shows the calculated FORCs for a given field orientation (marked by $\times$ in Fig. \ref{FIG01}(a).) Fig. \ref{FIG01}(c--d) shows the magnetization in the domain $\text{T}$ and the corresponding FORC diagram. It is seen that the distribution is a collection of tail-front pairs like Eq. \ref{forc hysteron} along the discontinuities in $m(B_b, B_a)$. A negative delta-like source at $(B_b=17\,\mathrm{mT},\,B_a=-39\,\mathrm{mT})$ is caused by the FORC with $B_a=-38\,$mT going back to positive saturation at $B_b=17\,$mT while the one with $B_a=-39\,$mT remains in its negative saturation state up to $B_b=30\,$mT. These type of strong, highly-localized FORC distribution sources are then due to irreversible events on different FORCs; therefore, these negative delta-like sources cannot occur in uniaxial particles which have only one irreversible event along the hysteresis main branch \citep{Stoner1948}.\par
+Fig. \ref{FIG01}(b) shows the calculated FORCs for a given field orientation (marked by $\times$ in Fig. \ref{FIG01}(a).) Fig. \ref{FIG01}(c--d) shows the magnetization in the domain $\text{T}$ and the corresponding FORC diagram. It is seen that the distribution is a collection of tail-front pairs like Eq. \ref{forc hysteron} along the discontinuities in $m(B_b, B_a)$. A negative delta-like source at $(B_b=17\,\mathrm{mT},\,B_a=-39\,\mathrm{mT})$ is caused by the FORC with $B_a=-38\,$mT going back to positive saturation at $B_b=17\,$mT while the one with $B_a=-39\,$mT remains in its negative saturation state up to $B_b=30\,$mT. These type of strong, highly-localized FORC distribution sources are then due to irreversible events on different FORCs; therefore, these negative delta-like sources cannot occur in uniaxial particles which have only one irreversible event along the hysteresis main branch \cite{Stoner1948}.\par
 
 The fraction of particles that have an easy axis alignment closer to the external field produces highly-symmetric, hysteron-like hysteresis curves which are responsible for the accumulation of positive delta-like sources along the central ridge. The material with the highest coercivities $B_\text{C}$ was found to be greigite, with $B_\text{C}$ as high as 80$\,$mT for particles with an easy axis closely aligned with the applied field. Iron has coercivities as high as 50$\,$mT and magnetite 28$\,$mT. The lowest coercivities were found in magnetite as low as 6$\,$mT, while the lowest values for iron and greigite are 16$\,$mT.\par
 
@@ -113,7 +117,7 @@ For iron (Figs. \ref{FIG03}(c--d)), the pattern formation is similar, if only wi
 
 FORC diagrams are usually presented as contour plots of the FORC distribution with higher values of the smoothing factor. Also, the usual plotting axes are the transformed $B_c = (B_b - B_a)/2$, $B_u = (B_b + B_a)/2$. In this manner, FORC diagrams are shown (Fig. \ref{FIG04}). For completion, a diagram for a dummy material that has the same parameters as greigite but a high $K_2$ so the easy axes are the $<$110$>$ is shown. The patterns are decidedly distinct for each material. It is interesting that the higher SF has the effect not only of smoothing the distribution but can also make the reversible information more apparent, as can be seen from the low-valued regions for small $B_c$.\par
 
-The FORC diagram for a noninteracting SD magnetite ensemble (Fig. \ref{FIG04}c) shows good agreement with previous studies \citep{Muxworthy2004,Harrison2014} as far as shape and position of the different features. The remanence was found to be in very good agreement with the known values \citep{Walker1993} for the different possibilities in the cubic MCA system. For magnetite ($K_1<0,\,K_2=0$) we found $M_{rs}=0.866$; iron ($K_1>0,\,K_2=0$) $M_{rs}=0.832$; and the dummy material ($K_1<0,\,K_2=-3K_1$) $M_{rs}=0.916$.\par
+The FORC diagram for a noninteracting SD magnetite ensemble (Fig. \ref{FIG04}c) shows good agreement with previous studies \cite{Muxworthy2004,Harrison2014} as far as shape and position of the different features. The remanence was found to be in very good agreement with the known values \cite{Walker1993} for the different possibilities in the cubic MCA system. For magnetite ($K_1<0,\,K_2=0$) we found $M_{rs}=0.866$; iron ($K_1>0,\,K_2=0$) $M_{rs}=0.832$; and the dummy material ($K_1<0,\,K_2=-3K_1$) $M_{rs}=0.916$.\par
 
 \section{Conclusion}
 The FORC distribution and diagram of noninteracting dispersions of SD particles with cubic MCA was calculated. The numerical algorithm was found to be robust and fast. It is important that the minimizer takes sensible steps in order to closely follow the gradient descent and not end up in local energy minima across energy barriers; the Armijo-Goldstein control parameters used in this study ensure these conditions.\par
@@ -121,17 +125,137 @@ The FORC distribution and diagram of noninteracting dispersions of SD particles 
 The mechanism behind the pattern formation on the FORC diagram of dilute dispersions of SD particles with cubic MCA was identified. The FORC signals due to the reversible and irreversible motions were determined. The FORC diagram patterns are strongly sensitive to the mineralogy, which supports the idea of FORC diagram use for mineralogical assessment of materials with cubic MCA.\par
 
 %%%% ACKNOWLEDGMENTS
-\begin{acknowledgments}
-This reasearch was supported by Instituto Mexicano del Petr\'oleo (MAVG) as well as by NERC grant NE/J020508/1 (ARM).
-\end{acknowledgments}
+\section*{Acknowledgments}
+This reasearch was supported by Instituto Mexicano del Petr\'oleo (MAVG) as well as by NERC grant NE/J020508/1 (ARM).\par
 
 %%%% REFERENCES
-\bibliography{references}
+%\bibliographystyle{IEEEtranN}
+%\bibliography{IEEEabrv,references}
+% Generated by IEEEtranN.bst, version: 1.14 (2015/08/26)
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\csname url@samestyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
+\providecommand{\BIBentryALTinterwordstretchfactor}{4}
+\providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand{\BIBforeignlanguage}[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtranN.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+\providecommand{\BIBdecl}{\relax}
+\BIBdecl
+
+\bibitem[Mayergoyz 1986]{Mayergoyz1986}
+\BIBentryALTinterwordspacing
+I.~Mayergoyz, ``Mathematical models of hysteresis,'' \emph{IEEE T. Magn.},
+  vol.~22, no.~5, pp. 603--608, 1986. [Online]. Available:
+  \url{http://dx.doi.org/10.1109/TMAG.1986.1064347}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Roberts et~al. 2000]{Roberts2000}
+\BIBentryALTinterwordspacing
+A.~P. Roberts, C.~R. Pike, and K.~L. Verosub, ``First-order reversal curve
+  diagrams: {A} new tool for characterizing the magnetic properties of natural
+  samples,'' \emph{J. Geophys. Res.}, vol. 105, no. B12, pp. 28\,461--28\,475,
+  2000. [Online]. Available: \url{http://dx.doi.org/10.1029/2000JB900326}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Pike et~al. 1999]{Pike1999}
+\BIBentryALTinterwordspacing
+C.~R. Pike, A.~P. Roberts, and K.~L. Verosub, ``Characterizing interactions in
+  fine magnetic particle systems using first order reversal curves,'' \emph{J.
+  Appl. Phys.}, vol.~85, no.~9, pp. 6660--6667, 1999. [Online]. Available:
+  \url{http://dx.doi.org/10.1063/1.370176}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Pike et~al. 2005]{Pike2005}
+\BIBentryALTinterwordspacing
+C.~R. Pike, C.~A. Ross, R.~T. Scalettar, and G.~Zimanyi, ``First-order reversal
+  curve diagram analysis of a perpendicular nickel nanopillar array,''
+  \emph{Phys. Rev. B}, vol.~71, no.~13, p. 134407, 2005. [Online]. Available:
+  \url{http://doi.org/10.1103/PhysRevB.71.134407}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Katzgraber et~al. 2002]{Katzgraber2002}
+\BIBentryALTinterwordspacing
+H.~G. Katzgraber, F.~Pazmandi, C.~R. Pike, K.~Liu, R.~T. Scalettar, K.~L.
+  Verosub, and G.~T. Zimanyi, ``Reversal-field memory in the hysteresis of spin
+  glasses,'' \emph{Physical review letters}, vol.~89, no.~25, p. 257202, 2002.
+  [Online]. Available:
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.89.257202}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Stoner and Wohlfarth 1948]{Stoner1948}
+\BIBentryALTinterwordspacing
+E.~C. Stoner and E.~P. Wohlfarth, ``A mechanism of magnetic hysteresis in
+  heterogeneous alloys,'' \emph{Philos. T. R. Soc. A.}, vol. 240, no. 826, pp.
+  599--642, 1948. [Online]. Available: \url{http://www.jstor.org/stable/91421}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Newell 2005]{Newell2005}
+\BIBentryALTinterwordspacing
+A.~J. Newell, ``A high-precision model of first-order reversal curve (forc)
+  functions for single-domain ferromagnets with uniaxial anisotropy,''
+  \emph{Geochem. Geophys. Geosyst.}, vol.~6, no.~5, 2005. [Online]. Available:
+  \url{http://dx.doi.org/10.1029/2004GC000877}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Usov and Peschany 1997]{Usov1997}
+\BIBentryALTinterwordspacing
+N.~A. Usov and S.~E. Peschany, ``Theoretical hysteresis loops for single-domain
+  particles with cubic anisotropy,'' \emph{J. Magn. Magn. Mat.}, vol. 174,
+  no.~3, pp. 247--260, 1997. [Online]. Available:
+  \url{http://doi.org/10.1016/S0304-8853(97)00180-7}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Walker et~al. 1993]{Walker1993}
+\BIBentryALTinterwordspacing
+M.~Walker, P.~Mayo, K.~O'Grady, S.~Charles, and R.~Chantrell, ``The magnetic
+  properties of single-domain particles with cubic anisotropy. {I}.
+  {H}ysteresis loops,'' \emph{J. Phys.: Condens. Matter}, vol.~5, no.~17, p.
+  2779, 1993. [Online]. Available:
+  \url{http://doi.org/10.1088/0953-8984/5/17/012}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Muxworthy et~al. 2004]{Muxworthy2004}
+\BIBentryALTinterwordspacing
+A.~Muxworthy, D.~Heslop, and W.~Williams, ``Influence of magnetostatic
+  interactions on first-order-reversal-curve (FORC) diagrams: A micromagnetic
+  approach,'' \emph{Geophys. J. Int.}, vol. 158, no.~3, pp. 888--897, 2004.
+  [Online]. Available: \url{https://doi.org/10.1111/j.1365-246X.2004.02358.x}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Harrison and Lascu 2014]{Harrison2014}
+\BIBentryALTinterwordspacing
+R.~J. Harrison and I.~Lascu, ``Forculator: A micromagnetic tool for simulating
+  first-order reversal curve diagrams,'' \emph{Geochem. Geophys. Geosyst.},
+  vol.~15, no.~12, pp. 4671--4691, 2014. [Online]. Available:
+  \url{http://dx.doi.org/10.1002/2014GC005582}
+\BIBentrySTDinterwordspacing
+
+\bibitem[Armijo 1966]{Armijo1966}
+\BIBentryALTinterwordspacing
+L.~Armijo, ``Minimization of functions having Lipschitz continuous first
+  partial derivatives,'' \emph{Pac. J. Math.}, vol.~16, no.~1, pp. 1--3, 1966.
+  [Online]. Available: \url{http://dx.doi.org/10.2140/pjm.1966.16.1}
+\BIBentrySTDinterwordspacing
+
+\end{thebibliography}
 
 %%%% FIGURES
 \begin{figure*}
 \includegraphics[width=\textwidth]{FIG01.pdf}
-\caption{Basic concepts. a) Energy landscape in polar coordinates for $K_1<0,\, K_2=0$; b) a complete set of FORCs for $\theta ,\,\phi$ as marked by the \textbf{$\times$} in a); c) the magnetization $m(B_b, B_a)$; d) the corresponding FORC distribution. The FORC distribution fronts and tails coincide with the sharp edges of $m(B_b, B_a)$.}
+\caption{Basic concepts. a) Energy landscape in polar coordinates for $K_1<0,\, K_2=0$; b) a complete set of FORCs for $\theta ,\,\phi$ as marked by the \textbf{$\times$} in a); c) the magnetization $m(B_b, B_a)$; d) the corresponding FORC distribution (normalized). The FORC distribution fronts and tails coincide with the sharp edges of $m(B_b, B_a)$.}
 \label{FIG01}
 \end{figure*}
 
@@ -143,13 +267,13 @@ This reasearch was supported by Instituto Mexicano del Petr\'oleo (MAVG) as well
 
 \begin{figure*}
 \includegraphics[width=\textwidth]{FIG03.pdf}
-\caption{FORC distributions heat maps. a) Greigite and b) its purely reversible part; same for c,d) iron and e,f) magnetite. Note the different scale for each material. Greigite and magnetite ($K_1 < 0$) show very similar patterns while iron ($K_1>0$) distintictively shows no negative sources, either reversible or irreversible, to the right of the negative vertical feature.}
+\caption{FORC distributions heat maps (normalized). a) Greigite and b) its purely reversible part; same for c,d) iron and e,f) magnetite. Note the different scale for each material. Greigite and magnetite ($K_1 < 0$) show very similar patterns while iron ($K_1>0$) distintictively shows no negative sources, either reversible or irreversible, to the right of the negative vertical feature.}
 \label{FIG03}
 \end{figure*}
 
 \begin{figure*}
 \includegraphics[width=\textwidth]{FIG04.pdf}
-\caption{The FORC diagrams. a) Greigite (SF=4); b) iron (SF=4); c) magnetite (SF=2); d) A dummy material with $<110>$ easy axes (SF=4). Note the different scales. The pattern formations are similar in general shape; however, each is distinct as to allow mineral identification.}
+\caption{The FORC diagrams (normalized). a) Greigite (SF=4); b) iron (SF=4); c) magnetite (SF=2); d) A dummy material with $<110>$ easy axes (SF=4). Note the different scales. The pattern formations are similar in general shape; however, each is distinct as to allow mineral identification.}
 \label{FIG04}
 \end{figure*}
 
