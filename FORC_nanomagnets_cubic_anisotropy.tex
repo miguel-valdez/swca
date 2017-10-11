@@ -4,6 +4,9 @@
 \usepackage{cite}
 \graphicspath{{./figs/}}
 
+\newcommand{\roughly}{{\raise.17ex\hbox{$\scriptstyle\sim$}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \title{First Order Reversal Curve Diagrams of Nanomagnets with Cubic Magnetocrystalline Anisotropy}
 
@@ -28,13 +31,13 @@ Computational magnetics, Hysteresis modeling, Numerical methods, Nanomagnetics
 
 First order reversal curves (FORCs) are a set of partial hysteresis loops, each starting at (positive) saturation followed by the quasi-static decrease of the applied field strength down to $B_a$. From $B_a$, the field strength is increased back to $B_{\text{sat}}$ to trace a given curve labeled by its $B_a$ value. On each FORC, the scalar magnetization is then a function $M=M(B_b, B_a)$ of the applied field $Bb$ and the $B_a$ value of the given curve ($B_a \leq B_b$). This function $M=M(B_b, B_a)$ is then defined on the right triangle $\text{T}=\left\{ (B_b,\, B_a):\, | B_b | ,\, | B_a | \leq B_{\text{sat}};\, B_a \leq B_b \right\}$. (The main branch corresponds to the hypotenuse $\left\{ M(B_b=B, B_a=B):\, |B| \leq B_{\text{sat.}} \right\}$ and the leg $\left\{ M(B_b=B, B_a=-B_{\text{sat.}}):\, |B| \leq B_{\text{sat.}}\right\}$ corresponds to the reversal branch.) The FORC distribution, an empirical analog of the Preisach weight function based on an experimental protocol, is defined as the second order mixed partial derivative \cite{Mayergoyz1986}
 \begin{equation}\label{forc}
-\rho = \rho(B_b, B_a) = -\frac{1}{2}\frac{\partial^2 M}{\partial B_a \partial B_b},
+\rho = \rho(B_b, B_a) = -\frac{\partial^2 M}{\partial B_a \partial B_b},
 \end{equation}
 which must be understood in some weak sense to allow the discontinuous $M(B_b, B_a)$. Contour plots of the FORC distribution are known as FORC diagrams and have been used by the wide magnetics community as a magnetic fingerprint \cite{Roberts2000,Pike1999,Pike2005,Katzgraber2002}.\par
 
 Based on Stoner-Wohlfarth theory \cite{Stoner1948} significant progress has been made towards understanding the contribution of magnetic single-domain (SD) particles with uniaxial magnetocrystalline anisotropy (MCA) to the FORC diagram properties of interacting and noninteracting dispersions\cite{Newell2005}. However, many materials including the most abundant ferromagnetic minerals on Earth possess a cubic MCA. The cubic MCA system is more complicated than the uniaxial and the mechanism behind the FORC diagram pattern formation is not yet as well understood as the general hysteretic properties \cite{Usov1997,Walker1993}.\par
 
-Previous studies of FORC diagram pattern formation by minerals with cubic MCA used micromagnetics\cite{Muxworthy2004} and dipole-dipole modelling\cite{Harrison2014} to study the influence of magnetostatic interactions on the FORC diagram; however, the fully noninteracting case remains unknown as these studies rely on specific geometries (a small number of particles, positions and orientations) thus lack generality and by definition cannot completely isolate the purely noninteractinf contribution. In this study we present a novel approach for numerically calculating the FORC diagram of a uniform noninteracting dispersion of SD particles with cubic MCA. The magnetic parameters of magnetite (Fe$_3$O$_4$), iron (Fe) and greigite (Fe$_3$S$_4$) have been used due to the natural abundance and importance for the Earth sciences of these iron minerals.\par
+Previous studies of FORC diagram pattern formation by minerals with cubic MCA used micromagnetics\cite{Muxworthy2004} and dipole-dipole modelling\cite{Harrison2014} to study the influence of magnetostatic interactions on the FORC diagram; however, the fully noninteracting case remains unknown as these studies rely on specific geometries (a small number of particles, positions and orientations) thus lack generality and by definition cannot completely isolate the purely noninteracting contribution. In this study we present a novel approach for numerically calculating the FORC diagram of a uniform noninteracting dispersion of SD particles with cubic MCA. The widely accepted magnetic parameters of magnetite (Fe$_3$O$_4$) (saturation magnetization $M_s=4.8\times 10^5 \, \text{A/m}$ and first anisotropy constant $K_1=-1.2\times 10^4 \, \text{J/m}^3$), iron (Fe) ($M_s=\roughly 1.7\times 10^6 \, \text{A/m}$ and $K_1=4.8\times 10^4 \, \text{J/m}^3$) and greigite (Fe$_3$S$_4$) ($M_s=\roughly 2.7\times 10^5 \, \text{A/m}$ and $K_1=-1.7\times 10^4 \, \text{J/m}^3$) have been used due to their natural abundance and importance for the Earth sciences of these iron minerals.\par
 
 \section{Method}
 
