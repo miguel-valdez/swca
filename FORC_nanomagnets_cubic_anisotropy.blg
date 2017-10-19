@@ -1,47 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: FORC_nanomagnets_cubic_anisotropy.aux
-I found no \bibdata command---while reading file FORC_nanomagnets_cubic_anisotropy.aux
-I found no \bibstyle command---while reading file FORC_nanomagnets_cubic_anisotropy.aux
-You've used 12 entries,
-            0 wiz_defined-function locations,
-            107 strings with 794 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
-int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+The style file: elsarticle-harv.bst
+Database file #1: references.bib
+You've used 19 entries,
+            2821 wiz_defined-function locations,
+            795 strings with 8964 characters,
+and the built_in function-call counts, 10101 in all, are:
+= -- 1011
+> -- 581
+< -- 8
++ -- 223
+- -- 198
+* -- 968
+:= -- 1834
+add.period$ -- 57
+call.type$ -- 19
+change.case$ -- 160
+chr.to.int$ -- 19
+cite$ -- 19
+duplicate$ -- 331
+empty$ -- 636
+format.name$ -- 255
+if$ -- 1977
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 20
+newline$ -- 82
+num.names$ -- 76
+pop$ -- 139
+preamble$ -- 1
+purify$ -- 142
 quote$ -- 0
-skip$ -- 0
+skip$ -- 240
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 581
+swap$ -- 38
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 168
 warning$ -- 0
-while$ -- 0
+while$ -- 84
 width$ -- 0
-write$ -- 0
-(There were 2 error messages)
+write$ -- 232
